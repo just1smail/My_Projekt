@@ -1,0 +1,85 @@
+{
+  "Filter": {
+    "1": "Soup",
+    "2": "Dish",
+    "3": "Breakfast",
+    "4": "Salads",
+    "5": "Buns, Sambusa",
+    "6": "Dessert",
+    "7": "Beverages"
+  },
+  "Search": {
+    "placeholder": "Search..."
+  },
+  "Foods": {
+    "1": "Beef Soup",
+    "2": "Bean Soup",
+    "3": "Mastava",
+    "4": "Rassolnik",
+    "5": "Сabbage roll Soup",
+    "6": "Meatball Soup",
+    "7": "Borsch",
+    "8": "Lamb Soup"
+  },
+  "Garnirs": {
+    "1": "Mashed potatoes",
+    "2": "Buckwheat",
+    "3": "Rice",
+    "4": "Pasta",
+    "5": "French Fries",
+    "6": "Beef cutlets",
+    "7": "Chicken Kiev",
+    "8": "Chicken legs",
+    "9": "Nuggets",
+    "10": "Sausages",
+    "11": "Fried fish",
+    "12": "Manti"
+  },
+  "breakfast": {
+    "1": "Pancakes",
+    "2": "Cheese pancakes",
+    "3": "Rice porridge",
+    "4": "Semolina porridge",
+    "5": "Cottage cheese with sour cream",
+    "6": "Fried eggs",
+    "7": "Boiled eggs"
+  },
+  "salads": {
+    "1": "Vegetable Salad",
+    "2": "Olivier Salad",
+    "3": "Pickled Cucumbers",
+    "4": "Caesar Salad",
+    "5": "Vinaigrette Salad"
+  },
+  "breads": {
+    "1": "Flatbread",
+    "2": "White Bread",
+    "3": "Black Bread",
+    "4": "Kulcha",
+    "5": "Samosa"
+  },
+  "deserts": {
+    "1": "Sponge Cake",
+    "2": "Layer Cake",
+    "3": "Honey Cake",
+    "4": "Baklava",
+    "5": "Cookies"
+  },
+  "drinks": {
+    "1": "Black Tea",
+    "2": "Green Tea",
+    "3": "Milky Coffee",
+    "4": "Black Coffee",
+    "5": "Compote",
+    "6": "Pepsi Cola",
+    "7": "Coca Cola",
+    "8": "RC Cola",
+    "9": "Still Water"
+  },
+  "TotalPrice": {
+    "1" : "Total Price"
+  },
+  "Category": {
+    "1" : "Categories"
+  }
+}

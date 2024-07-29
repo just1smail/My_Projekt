@@ -1,0 +1,325 @@
+{
+  "data": {
+    "sups": [
+      {
+        "id": "1",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Ls31r5K0CyplPzydmx78psOC5fznQcgYKtNXmSFdXVTbVjOi2obzzQAZ28Qs_Tu123Y&usqp=CAU",
+        "translationKey": "Foods.1",
+        "price": 15
+      },
+      {
+        "id": "2",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh-cXsNXDD6MljsEBZJsP0amUvIcxeOG2LcSrLduWbKExqMcxemSuAqmErkejQffs2-g&usqp=CAU",
+        "translationKey": "Foods.2",
+        "price": 15
+      },
+      {
+        "id": "3",
+        "img": "https://img.iamcook.ru/2021/upl/recipes/cat/u-7752c7090092d0f5ec425a6113489eca.jpg",
+        "translationKey": "Foods.3",
+        "price": 15
+      },
+      {
+        "id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmneEAhESk5WaFG-eaqexAtK-eZeZ3amoSDeiceLtb5hvW7T0R1-RYUqCuFhepDOeK1wI&usqp=CAU",
+        "translationKey": "Foods.4",
+        "price": 15
+      },
+      {
+        "id": "5",
+        "img": "https://eda.yandex.ru/images/3798638/adcf49946f7b6958551e8c9df0e29163-680x500.jpeg",
+        "translationKey": "Foods.5",
+        "price": 15
+      },
+      {
+        "id": "6",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jOaMN7dYTPe3PpMeWuhqKY3rTjrfwJmf__fJdlkIDGA0kEUMpPxlpqeALtvjE29r3p8&usqp=CAU",
+        "translationKey": "Foods.6",
+        "price": 15
+      },
+      {
+        "id": "7",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdFzxpOPgqWDsR3shkEArA35t4_tyUzCn11Doa2YtGFIHOnqYcE5egCq561IS6u2ncX4&usqp=CAU",
+        "translationKey": "Foods.7",
+        "price": 15
+      },
+      {
+        "id": "8",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnjLXsxa5YHHNtdBItiZjC0BaPHKoRnZzg6xeyRR2XyXD0hdIRL-ID4y5AXOqJocVvjK4&usqp=CAU",
+        "translationKey": "Foods.8",
+        "price": 15
+      }
+    ],
+    "garnirs": [
+      {
+        "id": "1",
+        "img": "https://img.iamcook.ru/2022/upl/recipes/cat/u-6f813b4917ad03577d056610f5e244f7.JPG",
+        "translationKey": "Garnirs.1",
+        "price": 8
+      },
+      {
+        "id": "2",
+        "img": "https://cdnn21.img.ria.ru/images/07e4/07/15/1574656863_0:0:3072:1728_1920x0_80_0_0_445144dd30d22d6436ffbdf974f62aa5.jpg",
+        "translationKey": "Garnirs.2",
+        "price": 8
+      },
+      {
+        "id": "3",
+        "img": "https://e2.edimdoma.ru/data/posts/0001/6306/16306-ed4_wide.jpg?1631192756",
+        "translationKey": "Garnirs.3",
+        "price": 8
+      },
+      {
+        "id": "4",
+        "img": "https://static.1000.menu/img/content-v2/52/ab/18093/makarony-s-molokom-i-syrom_1614098318_14_max.jpg",
+        "translationKey": "Garnirs.4",
+        "price": 8
+      },
+      {
+        "id": "5",
+        "img": "https://static.1000.menu/img/content-v2/18/ca/14461/kartoshka-fri-na-skovorode_1581661860_11_max.jpg",
+        "translationKey": "Garnirs.5",
+        "price": 10
+      },
+      {
+        "id": "6",
+        "img": "https://primemeat.ru/about/kak-sdelat-kotlety-iz-govyadiny-sochnymi.jpg",
+        "translationKey": "Garnirs.6",
+        "price": 8
+      },
+      {
+        "id": "7",
+        "img": "https://bahetle-sib.ru/storage/goods/72539.jpg",
+        "translationKey": "Garnirs.7",
+        "price": 14
+      },
+      {
+        "id": "8",
+        "img": "https://img.iamcook.ru/2019/upl/recipes/cat/u-be75bac6e82688f9018d10f6d0ee63d2.jpg",
+        "translationKey": "Garnirs.8",
+        "price": 10
+      },
+      {
+        "id": "9",
+        "img": "https://food.pibig.info/uploads/posts/2023-08/1693423870_food-pibig-info-p-naggetsi-iz-kurinogo-file-v-dukhovke-insta-68.jpg",
+        "translationKey": "Garnirs.9",
+        "price": 5
+      },
+      {
+        "id": "10",
+        "img": "https://www.ermolino-produkty.ru/picts/articles/1000%25D1%2585750_%25D0%25BA%25D0%25B0%25D0%25BA_%25D0%25B6%25D0%25B0%25D1%2580%25D0%25B8%25D1%2582%25D1%258C_%25D1%2581%25D0%25BE%25D1%2581%25D0%25B8%25D1%2581%25D0%25BA%25D0%25B8.jpg",
+        "translationKey": "Garnirs.10",
+        "price": 2
+      },
+      {
+        "id": "11",
+        "img": "https://img1.russianfood.com/dycontent/images_upl/90/big_89688.jpg",
+        "translationKey": "Garnirs.11",
+        "price": 10
+      },
+      {
+        "id": "12",
+        "img": "https://i.obozrevatel.com/food/recipemain/2019/1/9/125.jpg?size=636x424",
+        "translationKey": "Garnirs.12",
+        "price": 4
+      }
+    ],
+    "breakfast": [
+      {
+        "id": "1",
+        "img": "https://pudov.ru/upload/resize_cache/webp/resize_cache/iblock/4c6/715_500_1/0d3w2tg81r0oba90czo4yf8zyvuty5wn.webp",
+        "price": 2,
+        "translationKey": "breakfast.1"
+      },
+      {
+        "id": "2",
+        "img": "https://prostokvashino.ru/upload/resize_cache/iblock/b1b/800_800_0/b1b727e06d8f0b23c6ea5e8f31c7df0f.jpg",
+        "price": 4,
+        "translationKey": "breakfast.2"
+      },
+      {
+        "id": "3",
+        "img": "https://img.iamcook.ru/2021/upl/recipes/cat/u-1b0e91ddc61774300ef82183c9ab9ec1.JPG",
+        "price": 10,
+        "translationKey": "breakfast.3"
+      },
+      {
+        "id": "4",
+        "img": "https://img1.russianfood.com/dycontent/images_upl/330/big_329548.jpg",
+        "price": 10,
+        "translationKey": "breakfast.4"
+      },
+      {
+        "id": "5",
+        "img": "https://vlavke.ru/b1/c/9801.1024x1024.jpg",
+        "price": 10,
+        "translationKey": "breakfast.5"
+      },
+      {
+        "id": "6",
+        "img": "https://img1.russianfood.com/dycontent/images_upl/393/big_392376.jpg",
+        "price": 3,
+        "translationKey": "breakfast.6"
+      },
+      {
+        "id": "7",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrLZNNTuagHMPRyLBHvSGSTYQNrNtu2m9l4rnutXPPfgGYM60FvL1uyu4J3aUtpVrlak&usqp=CAU",
+        "price": 10,
+        "translationKey": "breakfast.7"
+      }
+    ],
+    "salats": [
+      {
+        "id": "1",
+        "img": "https://img1.russianfood.com/dycontent/images_upl/345/big_344904.jpg",
+        "price": 5,
+        "translationKey": "salads.1"
+      },
+      {
+        "id": "2",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVpU3cTOMnn9lqKUgIeNuWZQRQ_Up7cvT7red-Bp9M1r2U3LocC5uKRA1HedSLD5bJUM&usqp=CAU",
+        "price": 5,
+        "translationKey": "salads.2"
+      },
+      {
+        "id": "3",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIK2S8h3sjJnHoOOgm6WaYoosv1wtzi3sDgnym7fS8kczVmlz9HE9dMTErOjuozhOyLI8&usqp=CAU",
+        "price": 5,
+        "translationKey": "salads.3"
+      },
+      {
+        "id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgpbQHYS4GFpGWNCZvcQvWF6kyJNbYE-45H0Wg-bEWVMeeEii5GAomHL_g4utx37GLc8A&usqp=CAU",
+        "price": 5,
+        "translationKey": "salads.4"
+      },
+      {
+        "id": "5",
+        "img": "https://img.iamcook.ru/2017/upl/recipes/cat/u6009-d578d08d04e059a9ccb4729943b5d3d8.jpg",
+        "price": 5,
+        "translationKey": "salads.5"
+      }
+    ],
+    "breads": [
+      {
+        "id": "1",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE9yCh83blSC8ubUeELwnjY_53OHnWlQd-9hBZm8ew_MfhkFYV4XMHCvPSyZlMa-djaVE&usqp=CAU",
+        "price": 5,
+        "translateKey": "breads.1"
+      },
+      {
+        "id": "2",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw67giB9gLvEpeZwWfpW80hMeRBI0rurfnsllmIVUu2MLDho2VFiCDy_qbznUAOqJTyc0&usqp=CAU",
+        "price": 2,
+        "translateKey": "breads.2"
+      },
+      {
+        "id": "3",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFEzubKswS4oMAsRm4qBfepJksyxKC-YDIPEV_xQKmKZU8eV2MfRYP-3jE3lxKEQ4PR4k&usqp=CAU",
+        "price": 2,
+        "translateKey": "breads.3"
+      },
+      {
+        "id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROd75jp1SQn59ntXqcpFV-REHoUH37z_faJlEaYxZKBBV7pxKBV6Lr4GI_r2VLFDY07ec&usqp=CAU",
+        "price": 2,
+        "translateKey": "breads.4"
+      },
+      {
+        "id": "5",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtHZBIHuOFup-HlhzqbTENGX8DslEqUw6M0bk_GUXZLFtQA9TrYJthCClcjEKb_iXKzA&usqp=CAU",
+        "price": 5,
+        "translateKey": "breads.5"
+      }
+    ],
+    "deserts": [
+      {
+        "id": "1",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ay1zbNVP0QpjNbvATp7D8YfMK-sm7yAoqpwzkUm5mH98nAgIAwCgCSX9-_ln-qDNYk4&usqp=CAU",
+        "price": 8,
+        "translateKey": "deserts.1"
+      },
+      {
+        "id": "2",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9mbxEnf9Y_ATGifLVyTiS2_vENLy1CkveAVbZFDjsfwGqKng1sz7VfUBjW2F9I-e4Do&usqp=CAU",
+        "price": 8,
+        "translateKey": "deserts.2"
+      },
+      {
+        "id": "3",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwlFytQy7iL7vsR9slgaeOSgAhiI6Z0t7l7_5GbS4ixRpE15EbMl1Y-XFFTB08mNd-t2s&usqp=CAU",
+        "price": 8,
+        "translateKey": "deserts.3"
+      },
+      {
+        "id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFSfvBkkDH3tKcJV43dmbwQbYuJy2ibjeFYSscZSPN8AGBVadI-86iiWyYlRwLo6sIHoU&usqp=CAU",
+        "price": 7,
+        "translateKey": "deserts.4"
+      },
+      {
+        "id": "5",
+        "img": "https://resizer.mail.ru/p/ff52accf-114c-58a1-895c-a4230616334b/AQAFIdPTMG_HlDP_aLQvav-3zL-h3osfwtajv8XbB-wRvFDRFjlZOq2rnDWZ3Ww1mQRjMSLPzy4K8Pov_hcSXVsUVD4.jpg",
+        "price": 3,
+        "translateKey": "deserts.5"
+      }
+    ],
+    "drinks": [
+      {
+        "id": "1",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbLCUga89Goe3GBe37ga3yu3pod74nTA4k-YgJnGaYeSRSpJtzHQb-mvG41Mo4S8LkUU&usqp=CAU",
+        "price": 2,
+        "translateKey": "drinks.1"
+      },
+      {
+        "id": "2",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjl4hHgBxDJxGngQIPy_-s1QA667X4igCY0Ztmpf0pD8MzO3FNPmO39ERHoZsj6g_CgQ&usqp=CAU",
+        "price": 2,
+        "translateKey": "drinks.2"
+      },
+      {
+        "id": "3",
+        "img": "https://w0.peakpx.com/wallpaper/27/370/HD-wallpaper-coffee-canvas-house-cafe-calm-creamy-designs-foods-indie-smooth-thumbnail.jpg",
+        "price": 2,
+        "translateKey": "drinks.3"
+      },
+      {
+        "id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9m71JRSL_2TWNdFO0NtS5yMILeJ7R8fJhAzBqTR5UcvvguafQFcZ4d780O2VA9i5YFMg&usqp=CAU",
+        "price": 2,
+        "translateKey": "drinks.4"
+      },
+      {
+        "id": "5",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRgoi6hpGUtMTypmWGbxqU8FNx3Xe3XtzGPo-30vLoPgsvlSaAY9gve2zAB-I3nqz8i8&usqp=CAU",
+        "price": 4,
+        "translateKey": "drinks.5"
+      },
+      {
+        "id": "6",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbhLes4BOHzYw0pmNLCet0DD65B6PeyZlCtkhbfPprBF2ugzTk-lft6H5oxN2KTlWm6I&usqp=CAU",
+        "price": 12,
+        "translateKey": "drinks.6"
+      },
+      {
+        "id": "7",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcB8Jyjne9Pym98oUvlG1ZU55zra26O1DMmj_d3HG3KYjc7S0_B8_D8TGaWik570-w1bA&usqp=CAU",
+        "price": 12,
+        "translateKey": "drinks.7"
+      },
+      {
+        "id": "8",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJMrdRBJKZwCL87yXwcu36D77P2OywF1mD1DuKbf9TlHYgQA5cFweQb7QS7sz9w3ET5Wo&usqp=CAU",
+        "price": 12,
+        "translateKey": "drinks.8"
+      },
+      {
+        "id": "9",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvNz-AX6Rhn2A4nJfUamfchxcFBzPgIPVgSvgBrhC-hVVoen_3b9-SLxV5bMmkRssWnY&usqp=CAU",
+        "price": 3,
+        "translateKey": "drinks.1"
+      }
+    ]
+  },
+  "data2": []
+}
