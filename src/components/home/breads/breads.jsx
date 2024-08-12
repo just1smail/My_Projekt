@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getData } from '../../../reducers/dataList/dataListSlice';
 import { Box } from '@mui/material';
@@ -33,6 +33,13 @@ const Breads = () => {
   }, []);
 
   const filteredBreads = data.breads?.filter((el) => el.translateKey.includes(search)) || [];
+
+  const [addedItems, setAddedItems] = useState([]);
+
+    const handleAddToBasket = (el) => {
+      dispatch(postData(el));
+      setAddedItems((prev) => [...prev, el.id]);
+    };
 
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '20px', padding: '10px', justifyContent: 'space-around' }}>
@@ -79,23 +86,25 @@ const Breads = () => {
         <h3 style={{ margin: '15px 0', fontSize: '18px', color: '#ff5722', zIndex: 2, position: 'relative', backgroundColor:"white", borderRadius:"30px", padding:"10px"}}>{t(el.translateKey)}</h3>
         <p style={{ width:"80px", margin: '15px 0', marginLeft:"65px" , fontSize:"18px", color: '#ff5722', zIndex: 2, position: 'relative', backgroundColor:"white", borderRadius:"30px", padding:"10px" }}>{el.price} с.</p>
         </Link>
-        <button onClick={() => postData(el)} style={{ 
-          padding: '10px 20px', 
-          borderRadius: '25px', 
-          background: '#fff', 
-          color: '#ff5722', 
-          border: 'none', 
-          cursor: 'pointer', 
-          fontSize: '16px',
-          fontWeight: 'bold',
-          transition: 'background 0.3s, color 0.3s',
-          zIndex: 2,
-          position: 'relative',
-          '&:hover': {
-            background: '#ff5722',
-            color: '#fff'
-          }
-        }}>Купить</button>
+        <button
+            onClick={() => handleAddToBasket(el)}
+            disabled={addedItems.includes(el.id)}
+            style={{
+              padding: "10px 20px",
+              borderRadius: "25px",
+              background: addedItems.includes(el.id) ? "#ff5722" : "#fff",
+              color: addedItems.includes(el.id) ? "#fff" : "#ff5722",
+              border: "none",
+              cursor: addedItems.includes(el.id) ? "default" : "pointer",
+              fontSize: "16px",
+              fontWeight: "bold",
+              transition: "background 0.3s, color 0.3s",
+              zIndex: 2,
+              position: "relative",
+            }}
+          >
+            {addedItems.includes(el.id) ? "Добавлено" : "Купить"}
+          </button>
       </Box>
     ))}
   </Box>

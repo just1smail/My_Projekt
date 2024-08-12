@@ -34,7 +34,7 @@ const Basket = () => {
 
   return (
     <div className="container mx-auto p-6 bg-gradient-to-r to-purple-100 min-h-screen">
-      <div className="w-[100%] flex gap-[20px]">
+      <div className="w-[95%] flex gap-[20px] flex-wrap m-auto">
         {data2?.map((el) => (
           <div
             key={el.id}

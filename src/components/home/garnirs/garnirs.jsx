@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "../../../reducers/dataList/dataListSlice";
 import { Box } from "@mui/material";
@@ -34,6 +34,13 @@ const Garnirs = () => {
 
   const filteredGarnirs =
     data.garnirs?.filter((el) => el.translationKey.includes(search)) || [];
+
+    const [addedItems, setAddedItems] = useState([]);
+
+    const handleAddToBasket = (el) => {
+      dispatch(postData(el));
+      setAddedItems((prev) => [...prev, el.id]);
+    };
 
   return (
     <Box
@@ -127,26 +134,23 @@ const Garnirs = () => {
             </p>
           </Link>
           <button
-          onClick={() => dispatch(postData(el))}
+            onClick={() => handleAddToBasket(el)}
+            disabled={addedItems.includes(el.id)}
             style={{
               padding: "10px 20px",
               borderRadius: "25px",
-              background: "#fff",
-              color: "#ff5722",
+              background: addedItems.includes(el.id) ? "#ff5722" : "#fff",
+              color: addedItems.includes(el.id) ? "#fff" : "#ff5722",
               border: "none",
-              cursor: "pointer",
+              cursor: addedItems.includes(el.id) ? "default" : "pointer",
               fontSize: "16px",
               fontWeight: "bold",
               transition: "background 0.3s, color 0.3s",
               zIndex: 2,
               position: "relative",
-              "&:hover": {
-                background: "#ff5722",
-                color: "#fff",
-              },
             }}
           >
-            Купить
+            {addedItems.includes(el.id) ? "Добавлено" : "Купить"}
           </button>
         </Box>
       ))}

@@ -37,7 +37,7 @@ export const storeListSlice = createSlice({
         state.data2 = action.payload;
       })
       .addCase(deleteData.fulfilled, (state, action) => {
-        console.log(good);
+        console.log("good");
       });
   },
 });

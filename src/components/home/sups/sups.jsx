@@ -25,6 +25,11 @@ const Sups = () => {
 
   const search = useSelector((store) => store.dataList.search);
 
+  const data2 = useSelector((store) => store.storeList.data2);
+
+  console.log(data2);
+  
+
   const dispatch = useDispatch();
 
   useEffect(() => {

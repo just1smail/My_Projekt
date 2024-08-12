@@ -1,13 +1,12 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { getData } from '../../../reducers/dataList/dataListSlice';
-import { Box } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { postData } from '../../../reducers/storeList/storeListSlice';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getData } from "../../../reducers/dataList/dataListSlice";
+import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import { postData } from "../../../reducers/storeList/storeListSlice";
+import { useTranslation } from "react-i18next";
 
 const Breakfast = () => {
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -24,7 +23,7 @@ const Breakfast = () => {
 
   const data = useSelector((store) => store.dataList.data);
 
-  const search = useSelector((store) => store.dataList.search)
+  const search = useSelector((store) => store.dataList.search);
 
   const dispatch = useDispatch();
 
@@ -32,74 +31,130 @@ const Breakfast = () => {
     dispatch(getData());
   }, []);
 
-  const filteredBreakfasts = data.breakfast?.filter((el) => el.translationKey.includes(search)) || [];
+  const filteredBreakfasts =
+    data.breakfast?.filter((el) => el.translationKey.includes(search)) || [];
+
+  const [addedItems, setAddedItems] = useState([]);
+
+  const handleAddToBasket = (el) => {
+    dispatch(postData(el));
+    setAddedItems((prev) => [...prev, el.id]);
+  };
 
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '20px', padding: '10px', justifyContent: 'space-around' }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "20px",
+        padding: "10px",
+        justifyContent: "space-around",
+      }}
+    >
       {filteredBreakfasts.map((el) => (
         <Box
-        key={el.id}
-        sx={{ 
-          width: '240px', 
-          bgcolor: '#fff', 
-          borderRadius: '20px', 
-          boxShadow: '0 6px 12px rgba(0,0,0,0.15)', 
-          padding: '15px', 
-          textAlign: 'center', 
-          transition: 'transform 0.3s, box-shadow 0.3s, background 0.3s',
-          position: 'relative',
-          overflow: 'hidden',
-          '&:hover': {
-            transform: 'scale(1.05)',
-            boxShadow: '0 12px 24px rgba(0,0,0,0.3)',
-            background: 'linear-gradient(135deg, #ff9800, #ff5722)',
-            '& .overlay': {
-              opacity: 0.8
-            }
-          }
-        }}
-      >
-        <Box
-          className="overlay"
+          key={el.id}
           sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            background: 'rgba(0,0,0,0.1)',
-            borderRadius: '20px',
-            transition: 'opacity 0.3s',
-            zIndex: 1,
-            opacity: 0,
+            width: "240px",
+            bgcolor: "#fff",
+            borderRadius: "20px",
+            boxShadow: "0 6px 12px rgba(0,0,0,0.15)",
+            padding: "15px",
+            textAlign: "center",
+            transition: "transform 0.3s, box-shadow 0.3s, background 0.3s",
+            position: "relative",
+            overflow: "hidden",
+            "&:hover": {
+              transform: "scale(1.05)",
+              boxShadow: "0 12px 24px rgba(0,0,0,0.3)",
+              background: "linear-gradient(135deg, #ff9800, #ff5722)",
+              "& .overlay": {
+                opacity: 0.8,
+              },
+            },
           }}
-        />
-        <Link to={"/" + el.id}>
-        <img src={el.img} alt={el.name} style={{ width: '100%', height: '150px', borderRadius: '20px', objectFit: 'cover', zIndex: 0 }} />
-        <h3 style={{ margin: '15px 0', fontSize: '18px', color: '#ff5722', zIndex: 2, position: 'relative', backgroundColor:"white", borderRadius:"30px", padding:"10px"}}>{t(el.translationKey)}</h3>
-        <p style={{ width:"80px", margin: '15px 0', marginLeft:"65px" , fontSize:"18px", color: '#ff5722', zIndex: 2, position: 'relative', backgroundColor:"white", borderRadius:"30px", padding:"10px" }}>{el.price} с.</p>
-        </Link>
-        <button onClick={() => dispatch(postData(el))} style={{ 
-          padding: '10px 20px', 
-          borderRadius: '25px', 
-          background: '#fff', 
-          color: '#ff5722', 
-          border: 'none', 
-          cursor: 'pointer', 
-          fontSize: '16px',
-          fontWeight: 'bold',
-          transition: 'background 0.3s, color 0.3s',
-          zIndex: 2,
-          position: 'relative',
-          '&:hover': {
-            background: '#ff5722',
-            color: '#fff'
-          }
-        }}>Купить</button>
-      </Box>
-    ))}
-  </Box>
-  )
-}
+        >
+          <Box
+            className="overlay"
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background: "rgba(0,0,0,0.1)",
+              borderRadius: "20px",
+              transition: "opacity 0.3s",
+              zIndex: 1,
+              opacity: 0,
+            }}
+          />
+          <Link to={"/" + el.id}>
+            <img
+              src={el.img}
+              alt={el.name}
+              style={{
+                width: "100%",
+                height: "150px",
+                borderRadius: "20px",
+                objectFit: "cover",
+                zIndex: 0,
+              }}
+            />
+            <h3
+              style={{
+                margin: "15px 0",
+                fontSize: "18px",
+                color: "#ff5722",
+                zIndex: 2,
+                position: "relative",
+                backgroundColor: "white",
+                borderRadius: "30px",
+                padding: "10px",
+              }}
+            >
+              {t(el.translationKey)}
+            </h3>
+            <p
+              style={{
+                width: "80px",
+                margin: "15px 0",
+                marginLeft: "65px",
+                fontSize: "18px",
+                color: "#ff5722",
+                zIndex: 2,
+                position: "relative",
+                backgroundColor: "white",
+                borderRadius: "30px",
+                padding: "10px",
+              }}
+            >
+              {el.price} с.
+            </p>
+          </Link>
+          <button
+            onClick={() => handleAddToBasket(el)}
+            disabled={addedItems.includes(el.id)}
+            style={{
+              padding: "10px 20px",
+              borderRadius: "25px",
+              background: addedItems.includes(el.id) ? "#ff5722" : "#fff",
+              color: addedItems.includes(el.id) ? "#fff" : "#ff5722",
+              border: "none",
+              cursor: addedItems.includes(el.id) ? "default" : "pointer",
+              fontSize: "16px",
+              fontWeight: "bold",
+              transition: "background 0.3s, color 0.3s",
+              zIndex: 2,
+              position: "relative",
+            }}
+          >
+            {addedItems.includes(el.id) ? "Добавлено" : "Купить"}
+          </button>
+        </Box>
+      ))}
+    </Box>
+  );
+};
 
-export default Breakfast
+export default Breakfast;
